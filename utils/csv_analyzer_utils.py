@@ -32,7 +32,7 @@ PROMPT_TEMPLATE = """
 
 
 def dataframe_agent(openai_api_key, df, query):
-    model = ChatOpenAI(model="gpt-4-turbo",
+    model = ChatOpenAI(model="gpt-4o-mini",
                        openai_api_key=openai_api_key,
                        temperature=0)
     agent = create_pandas_dataframe_agent(llm=model,
